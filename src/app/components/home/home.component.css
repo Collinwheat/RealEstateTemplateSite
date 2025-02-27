@@ -6,8 +6,7 @@
   grid-row-gap: 0px;
   }
 
-  .div1 {
-    background-color: bisque;
+  .heroBannerDiv {
     grid-area: 1 / 1 / 3 / 6;
   }
 
