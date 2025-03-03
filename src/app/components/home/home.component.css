@@ -100,7 +100,6 @@
   }
 
   .contact {
-    background-color: red;
     width: 100vw;
     height: 60vh;
     display: flex;
@@ -114,7 +113,7 @@
     transform: translateY(-20%);
   }
 
-  .div5 {
+  .carousel {
     background-color: purple;
   }
 
