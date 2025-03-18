@@ -17,7 +17,7 @@
     height: 35vw;
     overflow: hidden;
     width: 100vw;
-    padding-bottom:1vh;
+    padding-bottom:4vh;
   }
 
   .hero-banner{
@@ -110,6 +110,10 @@
 
   .contact-email {
     transform: translateY(-20%);
+  }
+
+  .marketing-subtitle {
+    max-width: 60vw;
   }
 
   .carousel {

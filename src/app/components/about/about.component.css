@@ -1,0 +1,60 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 40vh;
+  background-color: aqua;
+}
+
+.summary-gallery {
+  display: flex;
+  background-color: yellow;
+  width: 80vw;
+  height: 30vh;
+}
+
+.summary {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 5%;
+  background-color: beige;
+  width: 40vw;
+  height: 30vh;
+}
+
+.gallery {
+  background-color: blue;
+  width: 40vw;
+  height: 30vh;
+}
+
+.three h1 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #e3bb42;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #e3bb42;
+}

@@ -23,7 +23,7 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
-import { CarouselComponent } from './components/home/carousel/carousel.component';
+import { AboutComponent } from "./components/about/about.component";
 
 @NgModule({
   declarations: [
@@ -32,7 +32,6 @@ import { CarouselComponent } from './components/home/carousel/carousel.component
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -52,8 +51,9 @@ import { CarouselComponent } from './components/home/carousel/carousel.component
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
-  ],
+    BrowserAnimationsModule,
+    AboutComponent
+],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
