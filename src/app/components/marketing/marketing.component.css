@@ -1,0 +1,25 @@
+.marketing-gallery {
+  left:50%;
+  top: 50%;
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.test {
+  justify-content: center;
+  width: 22%;
+  height: 100%;
+  margin-left:10px;
+  border-radius: 5px;
+  background-color:#1d1d1f;
+}
+
+.marketing-icon {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: white;
+}
