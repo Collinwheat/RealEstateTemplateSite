@@ -1,3 +1,4 @@
+import { ButtonModule } from 'primeng/button';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,6 +25,12 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from "./components/about/about.component";
+import { CarouselComponent } from "./components/carousel/carousel.component";
+
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+import Material from '@primeng/themes/aura';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -52,9 +59,24 @@ import { AboutComponent } from "./components/about/about.component";
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
-    AboutComponent
+    AboutComponent,
+    ButtonModule,
+    CarouselModule,
+    CarouselComponent
 ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync(),
+    providePrimeNG({
+      ripple: true,
+      theme: {
+          preset: Material,
+          options: {
+              prefix: 'p',
+              darkModeSelector: 'system',
+              cssLayer: true
+          }
+      }
+  })],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
