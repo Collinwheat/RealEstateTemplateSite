@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
+import { Listing } from 'src/app/models/listing/listing';
 
 @Component({
   selector: 'app-carousel',
@@ -10,16 +11,19 @@ import { CarouselModule } from 'primeng/carousel';
   styleUrl: './carousel.component.css'
 })
 export class CarouselComponent {
-  products: String[] | undefined;
+  listings: Listing[] = [
+    {id: 1, name: "123 fake street", imageSource: "../../assets/listing.jpg", price: 1200000, listingLink: "", status: "active"},
+    {id: 1, name: "123 fake street", imageSource: "../../assets/listing.jpg", price: 1200000, listingLink: "", status: "active"},
+    {id: 1, name: "123 fake street", imageSource: "../../assets/listing.jpg", price: 1200000, listingLink: "", status: "active"},
+    {id: 1, name: "123 fake street", imageSource: "../../assets/listing.jpg", price: 1200000, listingLink: "", status: "active"},
+    {id: 1, name: "123 fake street", imageSource: "../../assets/listing.jpg", price: 1200000, listingLink: "", status: "active"},
+  ];
 
   responsiveOptions: any[] | undefined;
 
   constructor() {}
 
   ngOnInit() {
-      // this.productService.getProductsSmall().then((products) => {
-      //     this.products = products;
-      // });
 
     this.responsiveOptions = [
           {

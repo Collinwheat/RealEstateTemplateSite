@@ -62,7 +62,7 @@ import { CarouselModule } from 'primeng/carousel';
     AboutComponent,
     ButtonModule,
     CarouselModule,
-    CarouselComponent
+    CarouselComponent,
 ],
   providers: [
     provideAnimationsAsync(),
