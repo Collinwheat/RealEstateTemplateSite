@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { MatButtonModule } from '@angular/material/button';
 import { CarouselModule } from 'primeng/carousel';
 import { Listing } from 'src/app/models/listing/listing';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CarouselModule, ButtonModule],
+  imports: [CarouselModule, MatButtonModule],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.css'
 })
@@ -48,4 +48,5 @@ export class CarouselComponent {
           }
       ]
   }
+
 }

@@ -26,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from "./components/about/about.component";
 import { CarouselComponent } from "./components/carousel/carousel.component";
+import { MatButtonModule } from "@angular/material/button"
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
@@ -63,6 +64,7 @@ import { CarouselModule } from 'primeng/carousel';
     ButtonModule,
     CarouselModule,
     CarouselComponent,
+    MatButtonModule
 ],
   providers: [
     provideAnimationsAsync(),

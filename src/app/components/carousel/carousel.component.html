@@ -1,7 +1,7 @@
-<div class="card">
-  <p-carousel [value]="listings" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+<div class="parent">
+  <p-carousel class="carousel" [value]="listings" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
       <ng-template let-product #item>
-          <div class="border border-surface rounded-border m-2 p-4">
+          <div class="border m-2 p-4">
               <div class="mb-4">
                   <div class="relative mx-auto">
                       <img src="{{product.imageSource}}" [alt]="product.name" class="w-full rounded-border listing-image" />
@@ -11,8 +11,8 @@
               <div class="flex justify-between items-center">
                   <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div>
                   <span>
-                    <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
-                    <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    <button mat-raised-button>Hello</button>
+                    <button mat-raised-button>Hello</button>
                   </span>
               </div>
           </div>
