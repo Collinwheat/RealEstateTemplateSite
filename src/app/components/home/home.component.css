@@ -90,12 +90,26 @@
     justify-content: center;
   }
 
-  .test {
+  .marketing-gallery-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 22%;
     height: 100%;
     margin-left:10px;
     border-radius: 5px;
     background-color:#1d1d1f;
+  }
+
+  .final-marketing-gallery-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 100%;
+    margin-left:10px;
+    border-radius: 5px;
+    background-color:#e3bb42;
   }
 
   .contact {

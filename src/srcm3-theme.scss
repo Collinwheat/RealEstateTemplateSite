@@ -160,5 +160,5 @@ $dark-theme: mat.define-theme((
 
 html {
   @include mat.core-theme($_primary);
-  @include mat.button-theme($_primary);
+  @include mat.button-theme($light-theme);
 }
