@@ -1,3 +1,5 @@
+import { MatInputModule } from '@angular/material/input';
+import { MatStepperModule } from '@angular/material/stepper';
 import { ButtonModule } from 'primeng/button';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -26,12 +28,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from "./components/about/about.component";
 import { CarouselComponent } from "./components/carousel/carousel.component";
-import { MatButtonModule } from "@angular/material/button"
+import { MatButtonModule } from "@angular/material/button";
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
 import Material from '@primeng/themes/aura';
 import { CarouselModule } from 'primeng/carousel';
+import { ProcessComponent } from './components/process/process.component';
+import { DisclosuresComponent } from "./components/process/disclosures/disclosures.component";
+import { MortgageComponent } from "./components/process/mortgage/mortgage.component";
+import { ClosingComponent } from "./components/process/closing/closing.component";
+
 
 @NgModule({
   declarations: [
@@ -40,6 +48,7 @@ import { CarouselModule } from 'primeng/carousel';
     HeaderComponent,
     FooterComponent,
     ContactComponent,
+    ProcessComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +73,11 @@ import { CarouselModule } from 'primeng/carousel';
     ButtonModule,
     CarouselModule,
     CarouselComponent,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule,
+    DisclosuresComponent,
+    MortgageComponent,
+    ClosingComponent
 ],
   providers: [
     provideAnimationsAsync(),

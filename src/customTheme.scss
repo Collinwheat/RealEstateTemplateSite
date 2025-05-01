@@ -1,7 +1,0 @@
-@use '@angular/material' as mat;
-@use 'src/srcm3-theme.scss' as custom;
-
-html {
-  @include mat.core-theme(custom.$light-theme);
-  @include mat.button-theme(custom.$light-theme);
-}
