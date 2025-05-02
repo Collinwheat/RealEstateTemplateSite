@@ -1,5 +1,3 @@
-import { MatInputModule } from '@angular/material/input';
-import { MatStepperModule } from '@angular/material/stepper';
 import { ButtonModule } from 'primeng/button';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -39,6 +37,7 @@ import { ProcessComponent } from './components/process/process.component';
 import { DisclosuresComponent } from "./components/process/disclosures/disclosures.component";
 import { MortgageComponent } from "./components/process/mortgage/mortgage.component";
 import { ClosingComponent } from "./components/process/closing/closing.component";
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -75,9 +74,10 @@ import { ClosingComponent } from "./components/process/closing/closing.component
     CarouselComponent,
     MatButtonModule,
     MatTabsModule,
-    DisclosuresComponent,
     MortgageComponent,
-    ClosingComponent
+    ClosingComponent,
+    MatListModule,
+    DisclosuresComponent,
 ],
   providers: [
     provideAnimationsAsync(),

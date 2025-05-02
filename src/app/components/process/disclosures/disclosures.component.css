@@ -1,0 +1,90 @@
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.two h1 {
+  text-transform: capitalize;
+}
+.two h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  content: "";
+  background-color: #e3bb42;
+}
+
+.two h1 span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px;
+}
+.alt-two h1 {
+  text-align:center;
+}
+.alt-two h1:before {
+  left:50%; margin-left:-30px;
+}
+
+.content {
+  background-color: #f5f5f7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepper {
+  border-radius: 20px;
+  background-color: #f5f5f7;
+  overflow-x: hidden;
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* From Uiverse.io by Yaya12085 */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  width: 100%;
+  height: 50vh;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.card-left {
+  background-color: beige;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yellow {
+  color:#e3bb42;
+}
+
+
