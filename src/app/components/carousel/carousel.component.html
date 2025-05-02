@@ -4,16 +4,50 @@
           <div class="border m-2 p-4">
               <div class="mb-4">
                   <div class="relative mx-auto">
-                      <img src="{{product.imageSource}}" [alt]="product.name" class="w-full rounded-border listing-image" />
+                      <img src="{{product.imageSource}}" [alt]="product.name" class="w-full listing-image" />
                   </div>
               </div>
-              <div class="mb-4 font-medium">{{ product.name }}</div>
-              <div class="flex justify-between items-center">
-                  <div class="mt-0 font-semibold text-xl">{{ '$' + product.price }}</div>
-                  <span>
-                    <button mat-raised-button>Hello</button>
-                    <button mat-raised-button>Hello</button>
-                  </span>
+              <div class="mb-4 font-medium listing-info">
+                <div class="product-info-left">
+                  <div class="address">
+                    <h4>{{ product.name }}</h4>
+                  </div>
+                  <div class="listing-price">
+                    <h4>{{ product.price }} </h4>
+                  </div>
+                </div>
+                <div class="button-right">
+                  <button href="#" class="button" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    SELL MY HOME
+                  </button>
+                </div>
               </div>
           </div>
       </ng-template>
