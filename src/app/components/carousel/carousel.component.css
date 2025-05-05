@@ -3,8 +3,36 @@
   width: 100%;
 }
 
-.carousel-card {
-  border-radius: 5px;
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-data {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.spacer{
+  width: 5vw;
+}
+
+.headers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .parent {

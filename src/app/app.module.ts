@@ -38,6 +38,7 @@ import { DisclosuresComponent } from "./components/process/disclosures/disclosur
 import { MortgageComponent } from "./components/process/mortgage/mortgage.component";
 import { ClosingComponent } from "./components/process/closing/closing.component";
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -78,6 +79,7 @@ import {MatListModule} from '@angular/material/list';
     ClosingComponent,
     MatListModule,
     DisclosuresComponent,
+    MatTableModule
 ],
   providers: [
     provideAnimationsAsync(),

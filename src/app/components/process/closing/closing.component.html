@@ -1,1 +1,88 @@
-<p>closing works!</p>
+<div class="disclosures">
+  <div class="title">
+    <!-- Title -->
+    <div class="two alt-two">
+      <h1>
+        Disclosures, Due Diligence, and Inspections
+        <span class="marketing-subtitle"
+          >The closing process itself takes place at one table (either at the office of an attorney or title
+          company), where buyers sign all documents related to their loan and the transaction itself. After all
+          documents are signed and payments exchanged, buyers generally take possession of the keys
+          unless a separate agreement has been reached to allow the seller stay in the property for a period
+          after closing. The detailed steps that make up closing are:</span
+        >
+      </h1>
+    </div>
+  </div>
+  <!-- Bullet points column 1 -->
+  <div class="content">
+    <mat-stepper class="stepper" #stepper>
+
+      <mat-step class="step">
+        <ng-template matStepLabel>TITLE</ng-template>
+        <mat-card appearance="outlined" class="card">
+          <h1 class="step-text">1. A title search is run just prior to closing to determine if there are any liens or assessments on
+            the title. Provided the title is deemed clear, the closing proceeds as planned.</h1>
+        </mat-card>
+      </mat-step>
+
+      <mat-step class="step">
+        <ng-template matStepLabel>ATTORNEY</ng-template>
+        <mat-card appearance="outlined" class="card">
+          <h1 class="step-text">2. A buyer's attorney begins preparing the paperwork for changing the title / deed and will file
+            an application for title insurance if the lender requires it, and a final closing date is scheduled
+            on or around the date indicated in the contract.</h1>
+        </mat-card>
+      </mat-step>
+
+      <mat-step class="step">
+        <ng-template matStepLabel>FINAL FIGURES</ng-template>
+        <mat-card appearance="outlined" class="card">
+          <h1 class="step-text">3. A final cash figure for what a buyer needs to bring to the closing in the form of a cashier's
+            check is calculated. This is based not only on a mortgage's closing costs but factors like
+            property taxes and utilities paid in to date by the seller.</h1>
+        </mat-card>
+      </mat-step>
+
+      <mat-step class="step">
+        <ng-template matStepLabel>WALKTHROUGH</ng-template>
+        <mat-card appearance="outlined" class="card">
+          <h1 class="step-text">4. A final walkthrough will often be performed the day of or before closing to verify the property
+            is in the same condition it was when the process began.</h1>
+        </mat-card>
+      </mat-step>
+
+        <mat-step class="step">
+          <ng-template matStepLabel>SETTLEMENT</ng-template>
+          <mat-card appearance="outlined" class="card">
+            <h1 class="step-text">5. At the closing, or settlement, table, the buyer (and seller) sign all closing documents,
+              including the HUD-1 (see a sample HUD-1 here), and the final loan documents.</h1>
+          </mat-card>
+        </mat-step>
+
+        <mat-step class="step">
+          <ng-template matStepLabel>FUNDS</ng-template>
+          <mat-card appearance="outlined" class="card">
+            <h1 class="step-text">6. The buyer pays the remaining funds in their downpayment to an attorney or a representative
+              of the title company (who is present at closing) via cashier&#39;s check.</h1>
+          </mat-card>
+        </mat-step>
+
+        <mat-step class="step">
+          <ng-template matStepLabel>MUNICIPALITY</ng-template>
+          <mat-card appearance="outlined" class="card">
+            <h1 class="step-text">7. The representative from the title company or your attorney will then record the transaction
+              and deed with the appropriate municipality.</h1>
+          </mat-card>
+        </mat-step>
+
+        <mat-step class="step">
+          <ng-template matStepLabel>KEYS</ng-template>
+          <mat-card appearance="outlined" class="card">
+            <h1 class="step-text">8. The buyer receives the keys and, unless indicated differently in the contract, officially takes
+              possession of the property.</h1>
+          </mat-card>
+        </mat-step>
+    </mat-stepper>
+  </div>
+</div>

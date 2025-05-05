@@ -3,20 +3,31 @@
       <ng-template let-product #item>
           <div class="border m-2 p-4">
               <div class="mb-4">
-                  <div class="relative mx-auto">
+                  <div class="relative mx-auto card-content">
                       <img src="{{product.imageSource}}" [alt]="product.name" class="w-full listing-image" />
-                  </div>
-              </div>
-              <div class="mb-4 font-medium listing-info">
-                <div class="product-info-left">
-                  <div class="address">
-                    <h4>{{ product.name }}</h4>
-                  </div>
-                  <div class="listing-price">
-                    <h4>{{ product.price }} </h4>
-                  </div>
-                </div>
-                <div class="button-right">
+                    <div class="listing-data">
+                      <mat-card class="card">
+                        <div class="headers">
+                          <h6>Address:</h6>
+                          <h6>Price:</h6>
+                          <h6>Bedrooms:</h6>
+                          <h6>Bathrooms:</h6>
+                          <h6>Square Feet:</h6>
+                          <h6>Status:</h6>
+                        </div>
+                        <div class="spacer">
+                          <h1></h1>
+                        </div>
+                        <div class="information">
+                          <h6>{{product.name}}</h6>
+                          <h6>{{product.price}}</h6>
+                          <h6>5</h6>
+                          <h6>5</h6>
+                          <h6>5000</h6>
+                          <h6>{{product.status}}</h6>
+                        </div>
+                      </mat-card>
+                    </div>
                   <button href="#" class="button" style="--clr: #7808d0">
                     <span class="button__icon-wrapper">
                       <svg
@@ -45,10 +56,10 @@
                         ></path>
                       </svg>
                     </span>
-                    SELL MY HOME
+                    VIEW FULL LISTING
                   </button>
-                </div>
               </div>
+          </div>
           </div>
       </ng-template>
   </p-carousel>
