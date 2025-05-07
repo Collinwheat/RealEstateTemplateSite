@@ -24,7 +24,6 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './components/contact/contact.component';
-import { AboutComponent } from "./components/about/about.component";
 import { CarouselComponent } from "./components/carousel/carousel.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTabsModule } from '@angular/material/tabs';
@@ -39,6 +38,9 @@ import { MortgageComponent } from "./components/process/mortgage/mortgage.compon
 import { ClosingComponent } from "./components/process/closing/closing.component";
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
+import { StoryComponent } from "./components/story/story.component";
+import { NeighborhoodGuideComponent } from "./components/neighborhood-guide/neighborhood-guide.component";
+import { MarketingComponent } from "./components/marketing/marketing.component";
 
 
 @NgModule({
@@ -69,7 +71,6 @@ import {MatTableModule} from '@angular/material/table';
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
-    AboutComponent,
     ButtonModule,
     CarouselModule,
     CarouselComponent,
@@ -79,7 +80,10 @@ import {MatTableModule} from '@angular/material/table';
     ClosingComponent,
     MatListModule,
     DisclosuresComponent,
-    MatTableModule
+    MatTableModule,
+    StoryComponent,
+    NeighborhoodGuideComponent,
+    MarketingComponent
 ],
   providers: [
     provideAnimationsAsync(),
