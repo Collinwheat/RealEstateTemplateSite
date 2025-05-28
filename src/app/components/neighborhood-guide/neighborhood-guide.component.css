@@ -1,3 +1,10 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .two h1 {
   text-transform: capitalize;
 }
@@ -33,7 +40,7 @@
 }
 
 .hovereffect {
-  width: 33%;
+  width: 100%;
   height: 100%;
   float: left;
   overflow: hidden;
@@ -119,6 +126,7 @@
   height: 40vh;
   padding: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
   align-items: center;
@@ -126,7 +134,19 @@
 
 .gallery-image {
   filter:brightness(50%);
-  border-radius: 5px;
+  border-radius: 10px;
   height: 100%;
   width: 100%;
+  padding: 5px;
+}
+
+@media (max-width: 500px){
+  .gallery, .parent {
+    flex-direction: column;
+  }
+
+  .gallery-image, .hovereffect {
+    height: 30vh;
+    width: 80vw;
+  }
 }
