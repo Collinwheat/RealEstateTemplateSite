@@ -138,6 +138,7 @@
   height: 100%;
   width: 100%;
   padding: 5px;
+
 }
 
 @media (max-width: 500px){
@@ -147,6 +148,28 @@
 
   .gallery-image, .hovereffect {
     height: 30vh;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery, .parent {
+    flex-direction: column;
+  }
+
+  .gallery-image, .hovereffect {
+    height: 40vh;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery, .parent {
+    flex-direction: column;
+  }
+
+  .gallery-image, .hovereffect {
+    height: 40vh;
     width: 80vw;
   }
 }
