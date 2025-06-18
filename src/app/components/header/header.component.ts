@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 @Component({
     selector: 'app-header',
@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
     standalone: false
 })
 export class HeaderComponent {
+
+  isModalVisible = false;
+
+  openNewListing() {
+	this.isModalVisible = true;
+  }
+
+  hideModal() {
+	this.isModalVisible = false;
+  }
 
 }

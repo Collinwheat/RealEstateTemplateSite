@@ -41,6 +41,7 @@ import {MatTableModule} from '@angular/material/table';
 import { StoryComponent } from "./components/story/story.component";
 import { NeighborhoodGuideComponent } from "./components/neighborhood-guide/neighborhood-guide.component";
 import { MarketingComponent } from "./components/marketing/marketing.component";
+import { NewListingComponent } from "./components/new-listing/new-listing.component";
 
 
 @NgModule({
@@ -83,7 +84,8 @@ import { MarketingComponent } from "./components/marketing/marketing.component";
     MatTableModule,
     StoryComponent,
     NeighborhoodGuideComponent,
-    MarketingComponent
+    MarketingComponent,
+    NewListingComponent
 ],
   providers: [
     provideAnimationsAsync(),

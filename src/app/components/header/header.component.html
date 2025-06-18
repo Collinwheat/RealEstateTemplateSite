@@ -26,7 +26,7 @@
 				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
 				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
 				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+				    			<a class="d-flex align-items-center justify-content-center" (click)="openNewListing()"><span class="fa-solid fa-circle-user"><i class="sr-only">Dribbble</i></span></a>
 				    		</p>
 			        </div>
 						</div>
@@ -38,8 +38,6 @@
 	    	<a class="navbar-brand" href="index.html">Wheat <span>Real Estate</span></a>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
           <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
         </form>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +53,7 @@
 	        </ul>
 	      </div>
 	    </div>
+      <app-new-listing *ngIf="isModalVisible" (close)="hideModal()"></app-new-listing>
 	  </nav>
     <!-- END nav -->
 
