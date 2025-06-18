@@ -37,6 +37,7 @@
 
 .parent {
   width: 75vw;
+  padding-top: 10vh;
 }
 
 .two h1 {

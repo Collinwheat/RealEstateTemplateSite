@@ -2,7 +2,7 @@
 .form {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   width: 70vw;
@@ -20,7 +20,7 @@
   line-height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .form input {
@@ -28,8 +28,8 @@
   border: 1px solid rgb(219, 213, 213);
   padding: 8px 14px;
   border-radius: 8px;
-  width: 100%;
   height: 50px;
+  color: #1d1d1f;
 }
 
 .form textarea {
@@ -40,6 +40,7 @@
   outline: 0;
   padding: 8px 14px;
   border: 1px solid rgb(219, 213, 213);
+  color: #1d1d1f;
 }
 
 .form button {
@@ -110,6 +111,18 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row .input {
+  width: 50%;
 }
 
 

@@ -37,6 +37,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 10vh;
 }
 
 .marketing-gallery {
@@ -149,6 +150,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20vh;
   }
 
   .marketing-gallery-image, .final-marketing-gallery-image{
@@ -161,10 +163,22 @@
     font-size: 1rem;
     text-align: center;
   }
+
+  .marketing-button {
+    padding-top: 10vh;
+  }
 }
 
 @media (max-width: 1400px) {
   .marketing-gallery-image {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .marketing-gallery-image {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
