@@ -1,5 +1,6 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
     selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent {
 
   isModalVisible = false;
 
-  constructor(private viewportScroller: ViewportScroller) {
+  constructor(private viewportScroller: ViewportScroller, public auth: AuthService) {
     this.viewportScroller = viewportScroller
   }
 
@@ -24,7 +25,6 @@ export class HeaderComponent {
   }
 
   scrollTo(componentToScrollTo: string) {
-    console.log(componentToScrollTo);
     this.viewportScroller.scrollToAnchor(componentToScrollTo);
   }
 

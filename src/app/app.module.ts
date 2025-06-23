@@ -27,7 +27,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CarouselComponent } from "./components/carousel/carousel.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTabsModule } from '@angular/material/tabs';
-
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
 import Material from '@primeng/themes/aura';
@@ -42,6 +41,9 @@ import { StoryComponent } from "./components/story/story.component";
 import { NeighborhoodGuideComponent } from "./components/neighborhood-guide/neighborhood-guide.component";
 import { MarketingComponent } from "./components/marketing/marketing.component";
 import { NewListingComponent } from "./components/new-listing/new-listing.component";
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
 
 
 @NgModule({
@@ -85,9 +87,11 @@ import { NewListingComponent } from "./components/new-listing/new-listing.compon
     StoryComponent,
     NeighborhoodGuideComponent,
     MarketingComponent,
-    NewListingComponent
+    NewListingComponent,
 ],
   providers: [
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAuth(() => getAuth()),
     provideAnimationsAsync(),
     providePrimeNG({
       ripple: true,
