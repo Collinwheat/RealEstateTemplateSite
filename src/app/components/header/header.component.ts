@@ -13,7 +13,7 @@ export class HeaderComponent {
   isModalVisible = false;
 
   constructor(private viewportScroller: ViewportScroller, public auth: AuthService) {
-    this.viewportScroller = viewportScroller
+    this.viewportScroller = viewportScroller;
   }
 
   openNewListing() {

@@ -1,4 +1,3 @@
-// auth.service.ts
 import { Injectable } from '@angular/core';
 import {
   Auth,
@@ -6,6 +5,8 @@ import {
   GoogleAuthProvider,
   signOut,
   user,
+  browserLocalPersistence,
+  setPersistence,
 } from '@angular/fire/auth';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -14,14 +15,22 @@ import { environment } from 'src/environments/environment';
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   user$ = user(this.auth);
+  currentUserIsAdmin: boolean = false;
 
-  constructor(private auth: Auth) {}
+  constructor(private auth: Auth) {
+    setPersistence(this.auth, browserLocalPersistence).catch((err) =>
+      console.error('Persistence error:', err)
+    );
+  }
 
-  loginWithGoogle() {
-    return signInWithPopup(this.auth, new GoogleAuthProvider());
+  async loginWithGoogle() {
+    const result = signInWithPopup(this.auth, new GoogleAuthProvider());
+    const email = (await result).user?.email;
+    this.currentUserIsAdmin = environment.adminEmails.includes(email ?? '');
   }
 
   logout() {
+    this.currentUserIsAdmin = false;
     return signOut(this.auth);
   }
 
@@ -33,19 +42,5 @@ export class AuthService {
 
   getCurrentUser() {
     return this.auth.currentUser;
-  }
-
-  getCurrentUserIsAdmin() {
-    if (this.auth.currentUser) {
-      console.log(this.auth.currentUser.email);
-      let email = this.auth.currentUser.email;
-      if (email == 'collinwheat@gmail.com') {
-        console.log(email);
-        return true;
-      } else {
-        return false;
-      }
-    }
-    return false;
   }
 }

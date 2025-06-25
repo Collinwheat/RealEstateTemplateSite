@@ -41,13 +41,10 @@
 
 .hovereffect {
   width: 100%;
-  aspect-ratio: 4/3;
-  height: 100%;
-  float: left;
-  overflow: hidden;
+  aspect-ratio: 4 / 3;
   position: relative;
-  text-align: center;
-  cursor: default;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .hovereffect .overlay {
@@ -74,11 +71,16 @@
   transform: scale(1);
 }
 
+
 .hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.35s ease;
 }
 
 .hovereffect:hover img {
@@ -138,7 +140,7 @@
   border-radius: 10px;
   height: auto;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   padding: 5px;
   object-position: center;

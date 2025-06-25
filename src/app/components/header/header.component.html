@@ -26,10 +26,7 @@
 				    			<a href="https://www.facebook.com/wheatrealestateGA" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
 				    			<a href="https://x.com/wheatrealestate" class="d-flex align-items-center justify-content-center"><span class="fa fa-x-twitter"><i class="sr-only">Twitter</i></span></a>
 				    			<a href="https://www.instagram.com/atlantabroker/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-				    			<!-- <a class="d-flex align-items-center justify-content-center" (click)="openNewListing()"><span class="fa-solid fa-circle-user"><i class="sr-only">Dribbble</i></span></a> -->
-				    			<a class="d-flex align-items-center justify-content-center" (click)="auth.loginWithGoogle()"><span class="fa-solid fa-circle-user"><i class="sr-only">Dribbble</i></span></a>
-				    			<a class="d-flex align-items-center justify-content-center" (click)="auth.getCurrentUser()"><span class="fa-solid fa-x"><i class="sr-only">Dribbble</i></span></a>
-				    		</p>
+				    			<a class="d-flex align-items-center justify-content-center" (click)="auth.loginWithGoogle()"><span class="fa-solid fa-circle-user"><i class="sr-only">Dribbble</i></span></a>				    		</p>
 			        </div>
 						</div>
 				</div>
@@ -38,8 +35,8 @@
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	    	<a class="navbar-brand" href="index.html">Wheat <span>Real Estate</span></a>
-	    	<form action="#" class="searchform order-sm-start order-lg-last">
-          <div class="form-group d-flex" *ngIf="auth.getCurrentUserIsAdmin()">
+	    	<form (submit)="false" class="searchform order-sm-start order-lg-last">
+          <div class="form-group d-flex" *ngIf="auth.currentUserIsAdmin">
             <button (click)="auth.logout()">Log Out</button>
             <button (click)="openNewListing()">Add New Listing</button>
           </div>
